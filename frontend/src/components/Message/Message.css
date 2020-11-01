@@ -1,0 +1,23 @@
+.message {
+    position: fixed;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 40px;
+    text-align: center;
+    background-color: #fd4a4d;
+}
+
+.message p {
+    line-height: 40px;
+    font-size: 18px;
+    color: rgb(43,43,43);
+}
+
+@media(max-width: 450px) {
+    .message {
+        top: 70px;
+        width: 100%;
+    }
+}

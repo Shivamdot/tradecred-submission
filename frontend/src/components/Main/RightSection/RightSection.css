@@ -1,0 +1,22 @@
+.blk {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    float: right;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.blk img {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+@media(max-width: 450px) {
+    .blk {
+        display: none;
+    }
+}

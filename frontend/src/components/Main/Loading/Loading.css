@@ -1,0 +1,45 @@
+.loading {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+}
+
+.loading .loading-blk {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+    height: 80px;
+    width: 80px;
+    animation: rotate 1s infinite linear;
+}
+
+.loading .loading-blk img {
+    width: 100%;
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotateZ(-10deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotateZ(360deg);
+    }
+}
+
+@media(max-width: 1200px) {
+    .loading .loading-blk {
+        top: 40%;
+        left: 50%;
+    }   
+}
+
+@media(max-width: 450px) {
+    .loading {
+        width: 100%;
+    }
+}

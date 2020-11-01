@@ -1,0 +1,167 @@
+.dialogue {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    padding: 10px;
+    font-size: 0;
+}
+
+.dialogue .name {
+    font-size: 22px;
+    color: rgb(68, 68, 68); 
+    margin: 20px 0;  
+    font-weight: 400;
+}
+
+.dialogue .name .bold {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.dialogue .name .clr {
+    color: #3f51b5;
+}
+
+.dialogue .data-blk {
+    display: inline-block;
+    width: 200px;
+    height: 120px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid rgb(220, 220, 220);
+    padding: 0 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+}
+
+.dialogue .data-blk .count {
+    font-size: 40px;
+    color: #3f51b5;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.dialogue .data-blk .count.red {
+    color: #ed0b0e;
+}
+
+.dialogue .data-blk .descp {
+    font-size: 18px;
+    color: rgb(68, 68, 68);
+    line-height: 20px;
+}
+
+.dialogue .input-file {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.dialogue .input-file + label {
+    background-color: #3f51b5;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 17px;
+    height: 45px;
+    line-height: 25px;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.4);
+    transition: .2s;
+    margin-top: 20px;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.dialogue .input-file + label:hover {
+    box-shadow: 0 3px 10px rgba(0,0,0,.4);
+}
+
+.dialogue .confirm {
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #3f51b5;
+    color: #3f51b5;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 17px;
+    height: 45px;
+    line-height: 23px;
+    padding: 10px 15px;
+    transition: .2s;
+    overflow: hidden;
+}
+
+.dialogue .confirm:hover {
+    background-color: #3f51b5;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,.4);
+}
+
+@media(max-width: 1200px) {
+    .dialogue .name {
+        font-size: 20px;
+    }
+    .dialogue .name .bold {
+        font-size: 22px;
+    }
+    .dialogue .data-blk {
+        width: 150px;
+        height: 100px;
+    }
+    .dialogue .data-blk .count {
+        font-size: 35px;
+    }
+    .dialogue .data-blk .descp {
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .dialogue .input-file + label {
+        font-size: 16px;
+        height: 40px;
+        line-height: 20px;
+    }
+    .dialogue .confirm {
+        font-size: 16px;
+        height: 40px;
+        line-height: 20px;
+    }
+}
+
+@media(max-width: 450px) {
+    .dialogue {
+        width: 100%;
+        text-align: center;
+    }
+    .dialogue .name {
+        font-size: 18px;
+        text-align: left;
+    }
+    .dialogue .name .bold {
+        font-size: 20px;
+    }
+    .dialogue .data-blk {
+        width: 40%;
+        height: 110px;
+    }
+    .dialogue .input-file + label {
+        font-size: 16px;
+        height: 40px;
+        line-height: 20px;
+    }
+    .dialogue .confirm {
+        font-size: 16px;
+        height: 40px;
+        line-height: 20px;
+        margin-top: 20px;
+    }
+}
+
